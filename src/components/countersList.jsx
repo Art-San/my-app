@@ -35,9 +35,7 @@ const CountersList = () => {
     };
 
     const handleDelete = (id) => {
-      console.log('handleDelete', id)
       const newCounters = counters.filter(c => c.id !== id)
-      newCounters.value--
       setCounters(newCounters)
     };
 
