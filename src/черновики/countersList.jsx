@@ -24,24 +24,40 @@ const CountersList = () => {
     };
     
   
+    // const handleDecrement = (id) => {
+    //   const newValueMinys = counters.map((counter) => {
+    //      if (counter.id === id) {
+    //         counter.value -= 1;
+    //      }
+    //      return counter;
+    //   })
+    //   setCounters(newValueMinys)
+    // };
+
+    // const handleDecrement = (id) => {
+    //   const slementIndex = counters.findIndex((c) => c.id === id);
+      
+    //   const newCounters = [...counters];
+    //   console.log('mewCouters', newCounters)
+    //   newCounters[slementIndex].value--;
+    //   console.log('slementIndex', newCounters[slementIndex].value)
+    //   // setCounters(newCounters)
+    // }
+
+    // const handleDecrement = (id) => {
+    //   const elementFilter = counters.filter(c => c.id === id)
+    //   elementFilter[0].value--
+    //     console.log('elementFilter', elementFilter)
+    //   setCounters(elementFilter)
+    // }
+
     const handleDecrement = (id) => {
-      const newValueMinys = counters.map((counter) => {
-         if (counter.id === id) {
-            counter.value -= 1;
-         }
-         return counter;
-      })
-      setCounters(newValueMinys)
-    };
-
-  //   const handleDecrement = (id) => {
-  //     const newCounter = counters.find((post) => post.id === id)
-  //     newCounter.value -=1
-  //     console.log('counters', counters[4].value)
-  //     setCounters(counters)
-  // };
-
-
+    const newCounter = counters.find((post) => post.id === id)
+    newCounter.value -=1
+    let newValueMinus = [...counters]
+    setCounters(newValueMinus)
+};
+  
 
 
     const handleDelete = (id) => {
