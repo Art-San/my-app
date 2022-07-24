@@ -34,41 +34,26 @@ const CountersList = () => {
       setCounters(newValueMinys)
     };
 
-  //   const handleDecrement = (id) => {
-  //     const newCounter = counters.find((post) => post.id === id)
-  //     newCounter.value -=1
-  //     console.log('counters', counters[4].value)
-  //     setCounters(counters)
-  // };
-
-
-
-
     const handleDelete = (id) => {
       console.log('handleDelete', id)
       const newCounters = counters.filter(c => c.id !== id)
       newCounters.value--
-      // console.log('newCounters', newCounters)
       setCounters(newCounters)
     };
 
     const handleReset = () => {
       setCounters(initialState)
-      // console.log('handle Reset') 
     };
 
      
     return (
         <>
         {counters.map((count) => (
-        // <Counter key={count.id} id={count.id} value = {count.value} name = {count.name} onDelete={handleDelete}/>
         <Counter 
               key={count.id} 
               onDelete={handleDelete} 
               onIncrement={handeleIncrement} 
               onDecrement={handleDecrement} {...count}/> 
-              // {/* <h1>Счетчик</h1>  */}
-              // {/* <span>{count.name}</span> */}
         
           ))}
           <button 

@@ -56,7 +56,14 @@ const CountersList = () => {
     newCounter.value -=1
     let newValueMinus = [...counters]
     setCounters(newValueMinus)
-};
+    };
+
+     //   const handleDecrement = (id) => {
+  //     const newCounter = counters.find((post) => post.id === id)
+  //     newCounter.value -=1
+  //     console.log('counters', counters[4].value)
+  //     setCounters(counters)
+  // };
   
 
 

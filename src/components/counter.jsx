@@ -1,8 +1,6 @@
 import React, { } from "react";
 
 const Counter = (props) => {
-    // console.log('props', props);
-    // const [value, setValue] = useState(props.value);
     const {value} = props;
     
    
@@ -16,16 +14,6 @@ const Counter = (props) => {
     return classes;
     };
 
-    // const handeleIncrement = () => {
-    //     // setValue((prevState) => prevState + 1);
-    //     // setValue(value + 1);
-    //     // setValue(value + 1);
-    //     console.log('handele Increment');
-    // };
-    // const handleDecrement = () => {
-    //     // setValue((prevState) => prevState - 1);
-    //     console.log('handle Decrement');
-    // };
     
 
     return (
